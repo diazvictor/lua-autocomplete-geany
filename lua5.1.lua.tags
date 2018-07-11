@@ -1,0 +1,216 @@
+# format=pipe
+# Funciones Internas de Lua 5.1 - 18 July 2018 - created by Diaz Urbaneja Victor Eduardo Diex <diaz.victor@openmailbox.org>
+# Basada en la documentacion de Lua 5.1 pagina : https://www.lua.org/manual/5.1/es/manual.html
+# la documentacion de GeanyLua esta basada en la pagina : 
+assert||(v [, message])|
+collectgarbage||(opt [, arg])|
+dofile||(filename)|
+error||(message [, level])|
+_G||||||
+getfenv||([f])|
+getmetatable||(object)|
+ipairs||(t)|
+load||(func [, nombre_de_chunk])|
+loadfile||([file_name])|
+loadstring||(string [, nombre_de_chunk])|
+next||(t [, indice)|
+pairs||(t)|
+pcall||(f, arg1, ···)|
+print||(···)|
+rawequal||(v1, v2)|
+rawget||(table, indice)|
+rawset||(table, indice, value)|
+select||(indice, ···)|
+setfenv||(f, table)|
+setmetatable||(table, metatable)|
+tonumber||(e [, base])|
+tostring||(e)|
+type||(v)|
+unpack||(lista [, i [, j]])|
+_VERSION||||||
+xpcall||(f, err)|
+require||(filename)|
+module||(nombre [, ···])|
+package|Modulo||
+cpath|package||
+loaded|package|||||
+loaders|package||
+loadlib|package|(nombre_de_biblioteca, nombre_de_func)|
+path|package||
+preload|package||
+seeall|package|(modulo)|
+coroutine|Manejo de co-routines||
+create|coroutine|(f)|
+resume|coroutine|(co [, val1, ···])|
+running|coroutine||
+status|coroutine|(co)|
+wrap|coroutine|(f)|
+yield|coroutine|(···)|
+concat|table|(table [, separador [, i [, j]]])|
+insert|table|(table, [posicion,] value)|
+maxn|table|(table)|
+remove|table|(table [, posicion])|
+sort|table|(table [, comparador])|
+byte|string|(s [, i [, j]])|
+char|string|(···)|
+dump|string|(function)|
+find|string|(s, patron [, inicio [, basica]])|
+format|string|(format, ···)|
+gmath|string|(s, patron)|
+gsub|string|(s, patron, replacement [, n])|
+len|string|(s)|
+lower|string|(s)|
+match|string|(s, patron [, start])|
+rep|string|(s, n)|
+reverse|string|(s)|
+sub|string|(s, i [, j])|
+upper|string|(s)|
+abs|math|(x)|
+acos|math|(x)|
+asin|math|(x)|
+atan|math|(x)|
+atan2|math|(y, x)|
+ceil|math|(x)|
+cos|math|(x)|
+cosh|math|(x)|
+deg|math|(x)|
+exp|math|(x)|
+floor|math|(x)|
+fmod|math|(x, y)|
+frexp|math|(x)|
+huge|math|||||
+ldexp|math|(m, e)|
+log|math|(x)|
+log10|math|(x)|
+max|math|(x, ···)|
+min|math|(x, ···)|
+modf|math|(x)|
+pi|math|||||
+pow|math|(x, y)|
+rad|math|(x)|
+random|math|([m [, n]])|
+randomseed|math|(x)|
+sin|math|(x)|
+sinh|math|(x)|
+sqrt|math|(x)|
+tan|math|(x)|
+tanh|math|(x)|
+close|io|([file_descriptor])|
+flush|io||||
+open|io|(file_name [, mode])|
+input|io|([file_descriptor, file_name])|
+lines|io|([file_name])|
+output|io|([file_descriptor, file_name])|
+popen|io|(prog [, mode])|
+read|io|(···)|
+tmpfile|io|||||
+type|io|(object)|
+write|io|(···)|
+seek|file|([whence] [, movement])|
+setvbuf|file|(mode [, size])|
+clock|os|||||
+date|os|([format [, time]])|
+difftime|os|(t2, t1)|
+execute|os|([command])|
+exit|os|([code])|
+getenv|os|(variable)|
+remove|os|(file_name)|
+rename|os|(old_name, new_name)|
+setlocale|os|(local [, category])|
+time|os|([table])|
+tmpname|os|||||
+debug|debug|
+getfenv|debug|(o)|
+gethook|debug|([process])|
+getinfo|debug|([process,] func [, que])|
+getlocal|debug|([process,] level, local)|
+getmetatable|debug|(object)|
+getregistry|debug|||||
+getupvalue|debug|(func, up)|
+setfenv|debug|(object, table)|
+sethook|debug|([process,] func_hook, mask[, counter])|
+setlocal|debug|([process,] level, local, value)|
+setmetatable|debug|(object, table)|
+setupvalue|debug|(func, up, value)|
+traceback|debug|([process,] [message] [, level])|
+activate|geany|( tab_id )|
+appinfo|geany|()|
+basename|geany|( pathstr )|
+batch|geany|( start )|
+byte|geany|( [position] )|
+caret|geany|( [position] )|
+close|geany|( [filename]|[index] )|
+copy|geany|( [content]|[start,stop] )|
+count|geany|()|
+cut|geany|()|
+dirlist|geany|( path )|
+dirname|geany|( pathstr )|
+documents|geany|( [doc_id] )|
+filename|geany|()|
+fileinfo|geany|()|
+find|geany|( phrase, start, stop, options )|
+fullpath|geany|( filename )|
+height|geany|()|
+keycmd|geany|( command )|
+keygrab|geany|( [prompt] )|
+launch|geany|( program [, arg1 [, arg2, ...]] )|
+length|geany|()|
+lines|geany|( [index] )|
+match|geany|( [position] )|
+navigate|geany|( mode, count [,extend [,rect]] )|
+newfile|geany|( [filename] )|
+open|geany|( [filename]|[index] )|
+optimize|geany|()|
+paste|geany|()|
+rescan|geany|()|
+rowcol|geany|( [position]|[line,column] )|
+save|geany|( [filename]|[index] )|
+scintilla|geany( msg_id [, wparam [, lparam]] )|
+select|geany|( [[start,] stop]] )|
+selection|geany|( [content] )|
+signal|geany|( widget, signal )|
+stat|geany|( filename [, lstat] )|
+status|geany|( message )|
+text|geany|( [content] )|
+timeout|geany|( seconds )|
+wkdir|geany|( [folder] )|
+word|geany|( [position] )|
+xsel|geany|( [text] )|
+yield|geany|()|
+choose|geany|( prompt, items )|
+confirm|geany|( title, question, default )|
+input|geany|( [prompt] [,default] )|
+message|geany|( [title,] message )|
+pickfile|geany|( [mode [,path [,filter]]] )|
+wordchars|geany|||||
+rectsel|geany|||||
+banner|geany|||||
+caller|geany|||||
+dirsep|geany|||||
+project|geany|||||
+script|geany|||||
+new|keyfile|()|
+data|keyfile|( kf [, text] )|
+groups|keyfile|( kf )|
+keys|keyfile|( kf, group )|
+value|keyfile|( kf, group, key [, value] )|
+comment|keyfile|( kf, group, key [, comment] )|
+has|keyfile|( kf, group [, key] )|
+remove|keyfile|( kf, group [, key] )|
+new|dialog|( title, buttons )|
+run|dialog|( dlg )|
+label|dialog|( dlg, text )|
+hr|dialog|( dlg )|
+heading|dialog|( dlg, text )|
+text|dialog|( dlg, key, default, prompt )|
+password|dialog|( dlg, key, default, prompt )|
+textarea|dialog|( dlg, key, default, caption )|
+checkbox|dialog|( dlg, key, default, caption )|
+select|dialog|( dlg, key, default, caption )|
+option|dialog|( dlg, key, value, label )|
+group|dialog|( dlg, key, default, caption )|
+radio|dialog|( dlg, key, value, label )|
+file|dialog|( dlg, key, default, caption )|
+color|dialog|( dlg, key, default, caption )|
+font|dialog|( dlg, key, default, caption )|
+
